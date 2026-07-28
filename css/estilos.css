@@ -575,5 +575,122 @@ footer hr{
     display:block;
 
 }
+    /*==============================
+    MENÚ RESPONSIVE
+==============================*/
+
+.mostrar-menu{
+
+    display:flex !important;
+
+    position:absolute;
+
+    top:80px;
+
+    left:0;
+
+    width:100%;
+
+    background:white;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    padding:30px;
+
+    gap:25px;
+
+    box-shadow:0 10px 20px rgba(0,0,0,.15);
+
+}
+
+/*==============================
+    NAVBAR SCROLL
+==============================*/
+
+.navbar-scroll{
+
+    background:#ffffff;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+
+}
+
+/*==============================
+    BOTÓN SUBIR
+==============================*/
+
+.btn-subir{
+
+    position:fixed;
+
+    right:25px;
+
+    bottom:25px;
+
+    width:55px;
+
+    height:55px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#0B57D0;
+
+    color:white;
+
+    cursor:pointer;
+
+    font-size:22px;
+
+    opacity:0;
+
+    pointer-events:none;
+
+    transition:.4s;
+
+    z-index:999;
+
+}
+
+.btn-subir:hover{
+
+    background:#08306B;
+
+}
+
+.btn-subir.mostrar{
+
+    opacity:1;
+
+    pointer-events:auto;
+
+}
+
+/*==============================
+    ANIMACIONES
+==============================*/
+
+.card,
+.objetivo,
+.recursos-grid div{
+
+    opacity:0;
+
+    transform:translateY(40px);
+
+    transition:all .8s ease;
+
+}
+
+.visible{
+
+    opacity:1 !important;
+
+    transform:translateY(0) !important;
+
+}
 
 }
