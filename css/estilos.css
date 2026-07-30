@@ -263,44 +263,51 @@ BOTÓN PRINCIPAL
 
 .btn-principal{
 
- 
-display:inline-flex;
+    display:inline-flex;
 
-align-items:center;
+    align-items:center;
 
-justify-content:center;
+    justify-content:center;
 
-gap:10px;
+    gap:12px;
 
-background:var(--azul);
+    background:linear-gradient(135deg, var(--azul), var(--azulOscuro));
 
-color:var(--blanco);
+    color:var(--blanco);
 
-padding:15px 35px;
+    padding:16px 36px;
 
-border-radius:50px;
+    border-radius:999px;
 
-transition:all var(--transicion);
+    font-weight:600;
 
-font-weight:600;
+    letter-spacing:.3px;
 
-box-shadow:0 8px 20px rgba(11,87,208,.25);
- 
+    transition:all var(--transicion);
+
+    box-shadow:0 12px 24px rgba(11,87,208,.25);
+
+}
+
+.btn-principal i{
+
+    font-size:16px;
 
 }
 
 .btn-principal:hover{
 
- 
-background:var(--azulOscuro);
+    transform:translateY(-3px);
 
-transform:translateY(-4px);
-
-box-shadow:0 14px 28px rgba(8,48,107,.28);
- 
+    box-shadow:0 18px 36px rgba(8,48,107,.30);
 
 }
 
+.btn-principal:active{
+
+    transform:translateY(-1px);
+
+}
 /*==========================
 UTILIDADES
 ==========================*/
