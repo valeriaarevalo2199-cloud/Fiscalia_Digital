@@ -1007,6 +1007,15 @@ transform:translateY(-4px);
 ```
 
 }
+.contenedor-footer{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:auto;
+
+}
 
 footer hr{
 
