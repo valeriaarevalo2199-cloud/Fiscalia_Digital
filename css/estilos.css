@@ -273,7 +273,7 @@ BOTÓN PRINCIPAL
 
     background:linear-gradient(135deg, var(--azul), var(--azulOscuro));
 
-    color:var(--blanco);
+    color:var(--blanco) !important;
 
     padding:16px 36px;
 
@@ -293,9 +293,15 @@ BOTÓN PRINCIPAL
 
     font-size:16px;
 
+    color:var(--blanco);
+
 }
 
 .btn-principal:hover{
+
+    background:linear-gradient(135deg, var(--azulOscuro), #06224F);
+
+    color:var(--blanco) !important;
 
     transform:translateY(-3px);
 
@@ -303,11 +309,12 @@ BOTÓN PRINCIPAL
 
 }
 
-.btn-principal:active{
+.btn-principal:visited{
 
-    transform:translateY(-1px);
+    color:var(--blanco);
 
 }
+
 /*==========================
 UTILIDADES
 ==========================*/
