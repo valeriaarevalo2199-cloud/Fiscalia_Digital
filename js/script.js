@@ -20,13 +20,13 @@ const menu = document.querySelector(".menu");
 
 if (menuBtn && menu) {
 
-```
+
 menuBtn.addEventListener("click", () => {
 
     menu.classList.toggle("mostrar-menu");
 
 });
-```
+
 
 }
 
@@ -36,7 +36,7 @@ menuBtn.addEventListener("click", () => {
 
 if (menu) {
 
-```
+
 document.querySelectorAll(".menu a").forEach(enlace => {
 
     enlace.addEventListener("click", () => {
@@ -46,7 +46,7 @@ document.querySelectorAll(".menu a").forEach(enlace => {
     });
 
 });
-```
+
 
 }
 
@@ -58,7 +58,7 @@ const navbar = document.querySelector("header");
 
 if (navbar) {
 
-```
+
 window.addEventListener("scroll", () => {
 
     if (window.scrollY > 60) {
@@ -72,7 +72,7 @@ window.addEventListener("scroll", () => {
     }
 
 });
-```
+
 
 }
 
@@ -89,7 +89,7 @@ document.body.appendChild(botonSubir);
 
 window.addEventListener("scroll", () => {
 
-```
+
 if (window.scrollY > 300) {
 
     botonSubir.classList.add("mostrar");
@@ -99,13 +99,13 @@ if (window.scrollY > 300) {
     botonSubir.classList.remove("mostrar");
 
 }
-```
+
 
 });
 
 botonSubir.addEventListener("click", () => {
 
-```
+
 window.scrollTo({
 
     top: 0,
@@ -113,7 +113,7 @@ window.scrollTo({
     behavior: "smooth"
 
 });
-```
+
 
 });
 
@@ -123,15 +123,15 @@ window.scrollTo({
 
 const elementos = document.querySelectorAll(
 
-```
+
 ".card, .objetivo, .recursos-grid div, .resultado, .timeline-item, .galeria img"
-```
+
 
 );
 
 const mostrarElemento = () => {
 
-```
+
 elementos.forEach(elemento => {
 
     const posicion = elemento.getBoundingClientRect().top;
@@ -144,7 +144,7 @@ elementos.forEach(elemento => {
     }
 
 });
-```
+
 
 };
 
