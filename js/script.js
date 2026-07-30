@@ -148,8 +148,14 @@ elementos.forEach(elemento => {
 
 };
 
-window.addEventListener("scroll", mostrarElemento);
+// Ejecutar inmediatamente al cargar el script
+mostrarElemento();
+
+// Ejecutar cuando termine de cargar la página
 window.addEventListener("load", mostrarElemento);
+
+// Ejecutar durante el desplazamiento
+window.addEventListener("scroll", mostrarElemento);
 
 // ==========================================================
 // FIN DEL ARCHIVO
