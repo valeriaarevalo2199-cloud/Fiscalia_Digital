@@ -942,6 +942,36 @@ margin-left:0;
 
 }
 
+
+/* ==========================
+   VIDEO DENTRO DE LA GALERÍA
+========================== */
+
+.video-galeria{
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    box-shadow:var(--sombra);
+
+    height:220px;
+
+}
+
+.video-galeria iframe{
+
+    width:100%;
+
+    height:100%;
+
+    border:none;
+
+    display:block;
+
+}
+
+
 /*==========================
 RECURSOS
 ==========================*/
