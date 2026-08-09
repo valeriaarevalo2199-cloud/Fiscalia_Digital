@@ -740,50 +740,28 @@ margin-bottom:35px;
 
 }
 
-.hero-imagen{
-
- 
-position:relative;
- 
-
+.hero-imagen {
+    position: relative;
+    overflow: hidden; /* Importante para que la imagen no desborde los bordes redondeados al crecer */
 }
 
-.hero-imagen::before{
-
- 
-content:"";
-
-position:absolute;
-
-inset:-15px;
-
-border-radius:30px;
-
-background:radial-gradient(circle at top right, rgba(11,87,208,.12), transparent 60%);
-
-z-index:-1;
- 
-
+.hero-imagen::before {
+    content: "";
+    position: absolute;
+    inset: -15px;
+    border-radius: 30px;
+    background: radial-gradient(circle at top right, rgba(11,87,208,.12), transparent 60%);
+    z-index: -1;
 }
 
-.hero-imagen img{
-
- 
-border-radius:25px;
-
-box-shadow:var(--sombra);
-
-transition:transform .4s ease;
- 
-
+.hero-imagen img {
+    border-radius: 25px;
+    box-shadow: var(--sombra);
+    transition: transform .4s ease;
 }
 
-.hero-imagen img:hover{
-
- 
-transform:scale(1.02);
- 
-
+.hero-imagen img:hover {
+    transform: scale(1.15); /* Aumenta este valor si deseas que crezca todavía más (ej: 1.2 o 1.25) */
 }
 
 /*==========================
