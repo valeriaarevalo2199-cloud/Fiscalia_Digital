@@ -257,6 +257,59 @@ margin:0 auto 50px;
 
 }
 
+/* ================= IMÁGENES DE EVIDENCIAS ================= */
+
+.imagen-evidencia {
+    overflow: hidden;
+    border-radius: 20px;
+    margin: 25px 0;
+    cursor: zoom-in;
+}
+
+.imagen-evidencia img {
+    width: 100%;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.imagen-evidencia:hover img {
+    transform: scale(1.05);
+}
+
+/* ================= MODAL DE IMAGEN ================= */
+
+.modal-imagen {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    inset: 0;
+    background: rgba(0,0,0,0.9);
+    justify-content: center;
+    align-items: center;
+    cursor: zoom-out;
+}
+
+.modal-contenido {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.5);
+}
+
+.cerrar-modal {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cerrar-modal:hover {
+    color: #ddd;
+}
+
 /* ==========================
    ENLACES DE RECURSOS
 ========================== */
