@@ -145,6 +145,15 @@ elementos.forEach(elemento => {
 
 });
 
+    function abrirImagen(src) {
+    document.getElementById('imagenGrande').src = src;
+    document.getElementById('modalImagen').style.display = 'flex';
+}
+
+function cerrarImagen() {
+    document.getElementById('modalImagen').style.display = 'none';
+}
+
 
 };
 
