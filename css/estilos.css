@@ -1097,7 +1097,22 @@ margin-left:0;
     display:block;
 
 }
+.galeria-item {
+    margin: 0;
+    text-align: center;
+}
 
+.galeria-item figcaption {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1f2937;
+}
+
+/* Opcional: hacer que el enlace ocupe todo el ancho */
+.galeria-item a {
+    display: block;
+}
 
 /*==========================
 RECURSOS
